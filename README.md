@@ -3,7 +3,6 @@
 ## Lancer le projet
 
 ```bash
-./executer.sh
 ```
 
 ## Dépendances du Projet
