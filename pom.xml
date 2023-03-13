@@ -4,6 +4,6 @@
   <modelVersion>4.0.0</modelVersion>
   <!-- Exemple avec un paquet Java `com.cicdlectures.menuserver` dans `src/main/java/com/cicdlectures/menuserver` -->
   <groupId>com.cicdlectures</groupId>
-  <artifactId>menuserver</artifactId>
+  <artifactId>menu-server</artifactId>
   <version>1.0-SNAPSHOT</version>
 </project>
