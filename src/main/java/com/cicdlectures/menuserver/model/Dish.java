@@ -45,7 +45,7 @@ public class Dish {
   }
 
   public static Set<Dish> fromDtoSet(Set<DishDto> dtos) {
-    Set dishes = new HashSet<>();
+    Set<Dish> dishes = new HashSet<>();
 
     for (DishDto dto : dtos) {
       dishes.add(Dish.fromDto(dto));
