@@ -10,7 +10,7 @@ jobs:
       - run: ls -l # Liste les fichier du répertoire courant
       - name: cat README
         id: cat
-        run: echo "read=$(cat README.md)\n" >> $GITHUB_OUTPUT
+        run: echo "read=${cat README.md}\n" >> $GITHUB_OUTPUT
       - name: cowsay
         id: cowsay_output_id # You want id
         uses: Code-Hex/neo-cowsay-action@v1
