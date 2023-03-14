@@ -6,6 +6,7 @@ jobs:
     runs-on: ubuntu-22.04
     container:
       image: ghcr.io/cicd-lectures/gitpod:latest
+      options: --user=root
     steps:
       - name: Check out repository code
         uses: actions/checkout@v3
