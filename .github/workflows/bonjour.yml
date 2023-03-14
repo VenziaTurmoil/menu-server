@@ -4,11 +4,17 @@ on:
 jobs:
   dire_bonjour:
     runs-on: ubuntu-22.04
-    container:
-      image: ghcr.io/cicd-lectures/gitpod:latest
-      options: --user=root
     steps:
       - name: Check out repository code
         uses: actions/checkout@v3
       - run: ls -l # Liste les fichier du répertoire courant
-      - run: cat README.md | cowsay # Affiche le contenu du fichier `README.md` à la base du dépôt
+      - name: cat README
+        id: cat
+        run: echo "read=$(cat README.md)\n" >> $GITHUB_OUTPUT
+      - name: cowsay
+        id: cowsay_output_id # You want id
+        uses: Code-Hex/neo-cowsay-action@v1
+        with:
+          message: ${{steps.cat.outputs.read}}
+          cow: 'gopher' # ascii art list: https://github.com/Code-Hex/Neo-cowsay/tree/master/cows
+          cowsay_to_output: 'cowsay'
