@@ -1,6 +1,7 @@
 name: SetUp
 on:
   - push
+  - pull_request
 jobs:
   Compilation:
     runs-on: ubuntu-22.04
@@ -20,4 +21,7 @@ jobs:
           maven-version: 3.8.6
 
       - name: Compilation
+        run: mvn compile
+
+      - name: Packaging
         run: mvn package
