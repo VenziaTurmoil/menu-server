@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class MenuServerApplication {
 
   public static void main(String[] args) {
-    SpringApplication.run(MenuSererApplication.class, args);
+    SpringApplication.run(MenuServerApplication.class, args);
   }
 
 }
