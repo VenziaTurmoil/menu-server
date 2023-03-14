@@ -2,7 +2,7 @@ name: SetUp
 on:
   - push
 jobs:
-  dire_bonjour:
+  Compilation:
     runs-on: ubuntu-22.04
     steps:
       - name: Check out repository code
